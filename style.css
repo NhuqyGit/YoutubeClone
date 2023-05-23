@@ -1,0 +1,267 @@
+:root{
+    --black: #000000;
+    --background: #0f0f0f;
+    --light-gray: #222222;
+    --dark-gray: #181818;
+    --border-gray: #282828;
+    --text-gray: #c2c2c2;
+    --hover-background: #383838;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: var(--background);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: var(--background);
+}
+
+.header-container{
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* ############ PART 1 ############ */
+
+.part1{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.header-menu, .logo-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo-container{
+    margin: 0 15px;
+}
+
+.header-menu{
+    border-radius: 50%;
+}
+
+.header-menu:hover{
+    background: var(--hover-background);
+}
+
+.header-menu svg{
+    width: 28px;
+    height: 29px;
+    margin: 6px 7px;
+}
+
+/* ############ HEADER SEARCH ########### */
+
+.header-container--search{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* border: solid 1px black; */
+    padding: 8px;
+}
+
+.search-input{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding: 5px;
+    border: solid 1px var(--border-gray);
+    color: var(--text-gray);
+}
+
+#search-key{
+    width: 100%;
+    height: 24px;
+    border: none;
+    background: var(--blackground);
+    font-size: 16px;
+    color: white;
+
+}
+
+#search-key:focus-visible{
+    outline: none;
+}
+
+#search-key:focus-visible + .keyboard-input{
+    /* border: solid 1px blue !important; */
+    color: red;
+}
+
+.keyboard-input i{
+    padding: 5px;
+}
+
+.search-icon{
+    width: 10%;
+    border: solid 1px var(--border-gray);
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    margin-right: 10px;
+    background: var(--light-gray);
+    /* color: white; */
+
+}
+
+.search-icon svg{
+    padding: 4px;
+}
+
+.voice-search{
+    border-radius: 50%;
+    background: var(--dark-gray);
+    /* color: white; */
+}
+
+.voice-search:hover{
+    background: var(--hover-background);
+}
+
+.voice-search i{
+    margin: 12px 15px;
+}
+
+
+/* ############ HEADER PERSONAL ########### */
+.personal-container{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.information, .notification{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.notification{
+    border-radius: 50%;
+}
+
+.notification:hover{
+    background: var(--hover-background);
+}
+
+.notification svg{
+    width: 28px;
+    height: 29px;
+    margin: 6px 7px;
+}
+
+.information img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+/* ################ MAIN ################ */
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 0 68px;
+}
+
+.main-container{
+    color: white;
+    /* display: grid;
+    grid-template-columns: 68px 1fr; */
+}
+
+.menu-listItem{
+    position: fixed;
+    top: 50px;
+    left: 9px;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    text-decoration: none;
+    color: white;
+}
+
+.items:hover{
+    background: var(--hover-background);
+    border-radius: 15%;
+}
+
+.items i{
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.main-content{
+    width: 100%;
+}
+
+.cateItems{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--light-gray);
+    padding: 8px 12px;
+    margin: 12px 12px 12px 0;
+    border-radius: 8px;
+}
+
+.cateItems:hover{
+    background: var(--hover-background);
+}
+
+
+.active{
+    background: white;
+    color: black;
+}
+
+.all{
+    margin-left: 24px;
+}
+
+/* .header-container, .list-cates, .menu-listItem{
+    position: ;
+} */
+
+.list-cates{
+    position: fixed;
+    width: 100%;
+    background: var(--background);
+}
+
+
+/* ########## Category content ########### */
+.cates-content{
+    padding-top: 24px;
+}
+
+
+
